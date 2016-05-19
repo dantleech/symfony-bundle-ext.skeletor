@@ -1,0 +1,30 @@
+{
+    "name": "{{ package.name }}",
+    "description": "{{ project.description }}",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "{{ author.name }}",
+            "email": "{{ author.email }}"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "{{ bundle.namespace }}\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "{{ bundle.namespace }}\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

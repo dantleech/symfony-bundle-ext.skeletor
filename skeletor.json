@@ -1,0 +1,38 @@
+{
+    "title": "Symfony Bundle (extended file structure)",
+    "description": "Skeleton for an MIT licensed Symfony Bundle, uses extended file structure and PSR-4",
+    "params": {
+        "package.name": "vendor/some-bundle",
+        "bundle.name": "BundleNameWithoutTheSuffix",
+        "bundle.namespace": "My\\\\Project",
+        "bundle.description": "Description about my project",
+        "author.name": "Anonymous",
+        "author.email": "anonymous@example.com",
+        "package.name": "my-vendor/my-package"
+    },
+    "basedir": "skeletor",
+    "files": {
+        "src": {
+            "type": "dir"
+        },
+        "tests": { 
+            "type": "dir"
+        },
+        "src/Bundle.php": {
+            "type": "file",
+            "dest": "src/{{ bundle.name }}Bundle.php"
+        },
+        "src/DependencyInjection/Extension.php": {
+            "type": "file",
+            "dest": "src/DependencyInjection/{{ bundle.name }}Extension.php"
+        },
+        "src/DependencyInjection/Configuration.php": {},
+        "LICENSE": {},
+        "README.md": {},
+        ".styleci.yml": {},
+        ".travis.yml": {},
+        ".gitignore": {},
+        "phpunit.xml.dist": {},
+        "composer.json": {}
+    }
+}
