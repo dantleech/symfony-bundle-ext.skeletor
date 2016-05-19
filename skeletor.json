@@ -19,11 +19,11 @@
             "type": "dir"
         },
         "src/Bundle.php": {
-            "type": "file",
+            "type": "template",
             "dest": "src/{{ bundle.name }}Bundle.php"
         },
         "src/DependencyInjection/Extension.php": {
-            "type": "file",
+            "type": "template",
             "dest": "src/DependencyInjection/{{ bundle.name }}Extension.php"
         },
         "src/DependencyInjection/Configuration.php": {},
