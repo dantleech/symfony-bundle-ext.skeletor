@@ -4,7 +4,7 @@
     "params": {
         "package.name": "vendor/some-bundle",
         "bundle.name": "BundleNameWithoutTheSuffix",
-        "bundle.namespace": "My\\\\Project",
+        "bundle.namespace": "My\\Project",
         "bundle.description": "Description about my project",
         "author.name": "Anonymous",
         "author.email": "anonymous@example.com",
@@ -12,6 +12,9 @@
     },
     "basedir": "skeletor",
     "files": {
+        "example/app/config/config.yml": {},
+        "example/app/AppKernel.php": {},
+        "example/bin/console": {},
         "src": {
             "type": "dir"
         },
@@ -27,6 +30,7 @@
             "dest": "src/DependencyInjection/{{ bundle.name }}Extension.php"
         },
         "src/DependencyInjection/Configuration.php": {},
+        "src/Resources/config/services.xml": {},
         "LICENSE": {},
         "README.md": {},
         ".styleci.yml": {},

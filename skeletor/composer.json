@@ -12,15 +12,19 @@
         "symfony/framework-bundle": "@stable"
     },
     "require-dev": {
+        "symfony/console": "@stable",
+        "symfony/yaml": "@stable",
+        "symfony/process": "@stable"
     },
     "autoload": {
         "psr-4": {
-            "{{ bundle.namespace }}\\": "lib/"
+            "{{ bundle.namespace }}\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "{{ bundle.namespace }}\\Tests\\": "tests/"
+            "{{ bundle.namespace }}\\Tests\\": "tests/",
+            "{{ bundle.namespace }}\\Example\\": "example/"
         }
     },
     "extra": {
